@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="https://use.typekit.net/pog7ryn.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gianna Aiello's Portfolio</title>
+<link rel="stylesheet" href="homepage.css">
+<script>
+    function showPopup(question, answer) {
+        const popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.innerHTML = `<h4>${question}</h4><p>${answer}</p><button onclick='closePopup(this)'>Close</button>`;
+        document.body.appendChild(popup);
+    }
+
+    function closePopup(button) {
+        document.body.removeChild(button.parentElement);
+    }
+</script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="homepage.html">
+            <img src="assets/images/gianna.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+        </a>
+        <div class="header-right">
+          <a href="about.html">
+            <img src="assets/images/about.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+          </a>
+          <a href="assets/resume.pdf">
+            <img src="assets/images/resume.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+          </a>
+        </div>
+    </div>
+
+<div class="container">
+    <section class="intro">
+        <img src="assets/images/hi.png" 
+            alt="Zest company logo" 
+            style="max-height: 100px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+        <h3>A computer engineer who designs structures in the real world and interfaces in the digital one</h3>
+    </section>
+    <section class="section">
+        <img src="assets/images/work.png" 
+        alt="Work image" 
+        class="work-left"
+        style="max-width: 250px;" />
+        <div class="notes-container">
+            <div class="post-it" onclick="window.location.href='https://gaiello1.github.io/redesign-dropdown/'" >
+                <u>Accessible Components</u><br/><br/>
+                Redesigned a dropdown menu to be more accessible
+                <!--  found this on https://stackoverflow.com/questions/27752500/how-to-have-an-anim-gif-on-a-link-and-play-it-on-hover-and-reset-->
+               <a href="https://www.google.com" title="Case Study 1">
+                      <div class="img-acu"></div>
+                </a>
+             </div>
+            <div class="post-it" onclick="window.location.href='https://jzdzilowska.github.io/IterativeDesign/'" >
+                <u>Zest Redesign</u><br/><br/>
+                Redesigned an onboarding experience
+                <a href="https://www.google.com" title="Case Study 1">
+                    <div class="img-acu"></div>
+              </a>
+           </div>
+            <div class="post-it" onclick="window.location.href='https://gaiello1.github.io/responsive-redesign-handin/'" >
+                <u>New England Aquarium Redesign</u><br/><br/>
+                Redesigned a website to address usability problems
+                <a href="https://www.google.com" title="Case Study 1">
+                    <div class="img-acu"></div>
+              </a>
+           </div>
+            <div class="post-it" onclick="window.location.href='https://gaiello1.github.io/persona-storyboarding/'" >
+                <u>Persona and Storyboarding</u><br/><br/>
+                Redesigned a physical interface based on feedback
+                <a href="https://www.google.com" title="Case Study 1">
+                    <div class="img-acu"></div>
+              </a>
+           </div>
+        </div>
+    </section>
+
+</div>
+
+
+<div class="footer">
+    <h3>Let's get in touch! </h3>
+    <a href="https://workspace.google.com/products/drive/" class="logo">
+    <img src="assets/images/linkedin.webp" 
+        alt="Zest company logo" 
+        style="max-height: 50px; cursor: pointer;" 
+        onclick="window.location.href='https://www.zest.co/'" 
+        /></a>
+
+    <a href="https://workspace.google.com/products/drive/" class="logo">
+    <img src="assets/images/email.webp" 
+        alt="Zest company logo" 
+        style="max-height: 50px; cursor: pointer;" 
+        onclick="window.location.href='https://www.zest.co/'" 
+        /></a>
+</div>
+
+</body>
+</html>

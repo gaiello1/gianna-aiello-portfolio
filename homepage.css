@@ -1,0 +1,526 @@
+@font-face {
+    font-family: 'Manifont Grotesk';
+    src: url('assets/fonts/manifont/ManifontGroteskBook-webfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Abordage'; 
+    src: url('assets/fonts/abordage/Abordage-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100vw; 
+    font-family: 'Manifont Grotesk', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0;
+    background-color: #ffffff;
+    color: #141414;
+    margin-block: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;  
+  }
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+  
+  .intro {
+    width: 85%;
+    height: 300px;
+    text-align: left;
+    border-radius: 8px;
+    background-color: #f9e9e3fb;
+    margin: 40px;
+  }
+
+  .intro img{
+    padding: 20px 0 0 40px;
+  }
+
+   
+  .intro h2 {
+    font-size: 50px;
+    margin:50px;
+    font-style: italic;
+  }
+  
+  .intro h3{
+    font-size: 25px;
+    margin:50px;
+    text-align-last: left;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px; 
+  }
+  
+
+  .headingright {
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .headingleft {
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  header h3 {
+    width: 50%;
+    font-size:15px;
+    text-align: justify;
+    text-align-last: center;
+  
+  }
+  h1 {
+    margin-top:30px;
+    margin-bottom: -5px;
+  }
+  
+  h2 {
+    font-size: 50px;
+    margin:50px;
+    font-style: italic;
+  }
+  
+  h3 {
+    margin: 0px; 
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  h4 {
+    font-size: 25px;
+    margin-block: 0;
+  }
+
+
+  .img-acu
+{
+  float: left;
+  width: 250px;
+  height: 132px;
+  background:transparent url("https://i.imgur.com/7r91PY3.jpeg") center top no-repeat;
+  background-size: 125%;
+}
+
+.img-acu:hover
+{
+  background-image: url("https://media.giphy.com/media/QMkPpxPDYY0fu/giphy.gif");
+}
+
+  a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: inherit; 
+    margin-block: 0;
+    font-style: italic;
+    padding: 2px; 
+    transition: 0.3s ease, color 0.3s ease;
+  }
+  
+  
+
+  a:hover {
+    color: rgb(255, 255, 255);
+    transform:scale(1.1);
+  }
+  
+  .section {
+    width: 100%;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-style: italic;
+    text-align: left;
+    margin-left:20px;
+  }
+  
+  .section img {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .section h3{
+    font-size: 17px;
+    text-align: justify;
+    text-align-last: center;
+  }
+  /* ----------------------------- PART 1 ----------------------------- */
+  
+  .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .questions ul {
+    width: 80%; margin: 0 auto; padding: 0; text-align: center;
+  }
+  
+  .cloud-textbox {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px dotted #c1ab93;
+    background-color: #fef7f0;
+    font-size: 18px;
+    color: #000;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .cloud-textbox:hover {
+    animation: shiver 0.5s infinite ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes shiver {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+  }
+  
+  .sketch img, .storyboard img {
+    margin-top: 10px; 
+    height: 500px;
+    width: auto;
+  }
+  
+  /* ----------------------------- PART 2 ----------------------------- */
+  
+  .notes-container {
+    display: flex;
+    gap: -20px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .post-it {
+    cursor: pointer;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: rotate(var(--rotation));
+    z-index: var(--index);
+    margin-left: -10px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    transition: margin 0.5s ease-in-out; /* Smooth transition over 0.5s */
+  }
+  
+  .post-it p {
+    font-family: 'Abordage', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .post-it:nth-child(1) { background-color: #fec9ca; --rotation: -3deg; --index: 1;}
+  .post-it:nth-child(2) { background-color: #d3a8b4; --rotation: 2deg; --index: 2; }
+  .post-it:nth-child(3) { background-color: #BD86A6; --rotation: -2deg; --index: 3; }
+  .post-it:nth-child(4) { background-color: #9690ad; --rotation: 1deg; --index: 4; }
+  .post-it:nth-child(5) { background-color: #f8e296; --rotation: -1deg; --index: 5; color:white}
+  
+  .post-it:hover {
+    animation: shiver 1s infinite ease-in-out;
+    z-index: 1000;
+    margin-right: 10px; /* Or whatever larger margin you want */
+    margin-left:10px;
+  }
+  
+  /* ----------------------------- PART 3 ----------------------------- */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    opacity: 90%;
+  }
+  
+  
+  .popup button {
+    font-family: 'Abordage', sans-serif;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-width: 0px; 
+  }
+  
+  /* ----------------------------- PART 4 ----------------------------- */ 
+  .personas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .personas img {
+    width: auto;
+    height: 500px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: help;
+  }
+  
+  .persona {
+    width: 375px;
+    text-align: justify;
+    text-align-last: center;
+  
+  }
+  
+  .persona img[alt="Empathy Map for Anxious Amber - the unsure freshman"] { 
+    transform: rotate(-3deg); 
+  }
+  .persona img[alt="Empathy Map for Joyful Jamie - the confident senior"] { 
+    transform: rotate(3deg); 
+    margin-top:32px;
+  }
+  
+  .persona img[alt="Empathy Map for Anxious Amber - the unsure freshman"]:hover {
+    animation: shiver 0.7s infinite ease-in-out;
+  }
+  
+  .persona img[alt="Empathy Map for Joyful Jamie - the confident senior"]:hover {
+    animation: shiver2 0.7s infinite ease-in-out;
+  }
+  
+  @keyframes shiver {
+    0%, 100% { transform: rotate(-3deg); }
+    25% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+  }
+  
+  @keyframes shiver2 {
+    0%, 100% { transform: rotate(3deg); }
+    25% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+  }
+  
+
+
+  /**footer a {
+    background:black; 
+    color: white;
+    font-style:italic;
+    text-decoration: none;
+    padding: 3px;
+
+    display: flex;
+    flex-direction: row;
+    gap: -20px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  footer a:hover {
+    background: white;
+    color: black;
+  }
+  .part4-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap; 
+  }
+  **/
+
+  .part4-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto; 
+  }
+  
+  .part4-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .custom-link {
+    font-size: 20px;
+  }
+  
+  .final {
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .final h2 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-style: italic;
+  }
+  
+  .final h3{
+    font-size: 17px;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+    /* Style the header with a grey background and some padding */
+    .header {
+      width: 100%;
+      overflow: hidden;
+      border-bottom: #1c1c1c 3px dotted;
+      font-style: italic;
+      overflow-x: hidden;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;  /* higher than sidenav's 1 */
+      padding: 20px;
+  
+    }
+    
+    /* Style the header links */
+    .header a {
+      color: black;
+      text-align: center;
+      padding-top: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    
+    .header a:hover {
+      color: white;
+      border-radius: 0px;
+      transform:scale(1.1);
+    }
+  
+    
+    /* Float the link section to the right */
+    .header-right {
+      float: right;
+    }
+    
+    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .header-right {
+        float: none;
+      }
+    }
+
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    border-top: #1c1c1c 3px dotted;
+    font-style: italic;
+
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Style the header links */
+  .footer a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .footer a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+  }
+  
+
+  /* Float the link section to the right */
+  .footer-right {
+    float: right;
+  }
+  
+
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.footer a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .footer a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .footer-right {
+      float: none;
+    }
+  }
