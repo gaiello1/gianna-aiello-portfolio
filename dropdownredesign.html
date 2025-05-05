@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/pog7ryn.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
+    <script>
+    </script>
+</head>
+
+<body>
+    
+    <div class="newheader">
+        <a href="index.html">
+            <img src="assets/images/gianna.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+        </a>
+        <div class="header-right">
+          <a href="about.html">
+            <img src="assets/images/about.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+          </a>
+          <a href="assets/resume.pdf">
+            <img src="assets/images/resume.png" 
+            alt="Zest company logo" 
+            style="max-height: 75px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+            />
+          </a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Making Components More Accessible</h1>
+    </header>     
+  <section class="final">
+    <h2>...PROJECT INTRODUCTION...</h2>
+    <h3>I will be redesigning a dropdown menu to be more accessible by first exploring the accessibility factors of a dropdown menu in Netflix, Apple Pages, and Google Calendar.
+    </h3>
+    <h3>Netflix</h3>
+    <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+    <img 
+    src="./assets/dropdownredesignImages/netflix1.png" 
+    alt="Zest company logo" 
+    style="max-height: 225px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/netflix2.png"
+    alt="Zest company logo" 
+    style="max-height: 225px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/netflix3.png"
+    alt="Zest company logo" 
+    style="max-height: 225px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+</div>
+</section>
+
+<section class="final">
+    <h3>Pages</h3>
+    <div style="display: flex; flex-direction: row; align-items: center; gap:100px">
+    <img 
+    src="./assets/dropdownredesignImages/pages1.png" 
+    alt="Zest company logo" 
+    style="max-height: 500px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/pages2.png"
+    alt="Zest company logo" 
+    style="max-height: 500px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/pages3.png"
+    alt="Zest company logo" 
+    style="max-height: 500px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+</div>
+
+<section class="final">
+    <h3>Google Calendar</h3>
+    <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+    <img 
+    src="./assets/dropdownredesignImages/gcal1.png" 
+    alt="Zest company logo" 
+    style="max-height: 300px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/gcal2.png"
+    alt="Zest company logo" 
+    style="max-height: 300px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+  <img 
+    src="./assets/dropdownredesignImages/gcal3.png"
+    alt="Zest company logo" 
+    style="max-height: 300px; cursor: pointer;" 
+    onclick="window.location.href='https://serve.neaq.org/application-information'" 
+  />
+</div>
+
+<section class="section">
+    <h2>...IDENTIFYING CURRENT INPUTS & OUTPUTS...</h2>
+    <h3>I took note how the page can be interacted with, and what happens when it is. I will use this information to make changes.</h3>
+<h3>Input:</h3>
+    <table>
+      <tr>
+        <th> </th>
+        <th>Google Calendar</th>
+        <th>Apple Pages</th>
+        <th>Netflix</th>
+      </tr>
+      <tr>
+        <th>Mouse/ Touchpad</th>
+        <td>There is no down arrow next to the time but it is boxed in some states.
+           In another state it does not seem like a drop down arrow will appear 
+           when you click on the time. However, to change the time you can click 
+           on a different time block in the calendar.</td>
+        <td>There is a down arrow next to the paragraph styles that makes it known 
+          that there will be a drop down menu.</td>
+        <td>There is a down arrow that makes it known that there will be a drop 
+          down menu if you want to select a genre.</td>
+      </tr>
+      <tr>
+        <th>Keyboard</th>
+        <td>When you click on the time dropdown menu and move the up and down arrows
+           it moves through the options.
+          When the menu is pressed and you press the escape key, the menu closes.
+          </td>
+        <td>When you click on the “Paragraph Styles” dropdown menu and move the up 
+          and down arrows it moves the document instead of scrolling through the menu.
+          When the menu is pressed and you press the escape key, the menu closes.
+          </td>
+        <td>When you click on the “Genres” dropdown menu and move the up and down arrows 
+          it moves the webpage instead of scrolling through the menu.
+          When the menu is pressed and you press the escape key, the menu does not close.
+          </td>
+      </tr>
+      <tr>
+        <th>Touch (if available)</th>
+        <td>You can also change the time of your event on the app by more precisely 
+          changing the size of the box that is on the calendar.</td>
+        <td>While you are typing, a bar on top of the keyboard comes up where you 
+          can edit the text like bold/ how it is aligned/ italicized/ and also how 
+          the text is styled.</td>
+        <td>There isn’t the same menu on the mobile version. There is a “TV Shows” 
+          and “Movies” option, then “Category”.</td>
+      </tr>
+    </table>
+    <br>
+
+    
+    <h3>Output:</h3>
+    <table>
+      <tr>
+        <th> </th>
+        <th>Google Calendar</th>
+        <th>Apple Pages</th>
+        <th>Netflix</th>
+      </tr>
+      <tr>
+        <th>Hovering</th>
+        <td>When you hover over the time, the box becomes a shade darker making it 
+          look clickable. It also has a line underneath it depending on the state it was previously in.</td>
+        <td>Nothing changes when you hover over the box.</td>
+        <td>When you hover over the “Genres” box, it becomes transparent.</td>
+      </tr>
+      <tr>
+        <th>VoiceOver</th>
+        <td>When using VoiceOver, “9:15pm, Start time, menu pop up collapsed, combo box” when the start time 
+          is clicked, “10:15pm, End time, menu pop up expanded, combo box, Event, tab panel” when the end time is selected.
+          </td>
+        <td>When the application opens, the VoiceOver begins by reading the document, which isn’t the best. I tried clicking
+           around the edit text option to prompt it to read the options, and it did not. After I clicked the “Paragraph Styles”
+            option, the VoiceOver read “3 items Paragraph Styles”. This was not the most accessible because there are so many 
+            options to click on the page and it would be hard to know where this option was. 
+          </td>
+        <td>When you enter the Netflix website, the VoiceOver starts by reading the top menu bar from left to right. Then it 
+          moves to the line below the menu bar and reads after the “Movies” option “Genres, menu pop up collapsed, button”. 
+          This seemed like the most accessible since the user might not know where this option is.
+          </td>
+      </tr>
+      <tr>
+        <th>Cue to click/ Appearence</th>
+        <td>The time does not look clickable, it is in a smaller font and there is no box around it. I think one has to be told 
+          this to know it unless they try tapping all over the screen, but after that it is easy to remember.
+        </td>
+        <td>You have to click on the Paragraph Styles Icon, which is not labelled, to pull up the menu. I think one has to be 
+          told this to know it, but after that it is easy to remember.
+          <div><img class="smallImage" src="./assets/paragraph.png"/></div>
+        </td>
+        <td>When you click on “Genres” a box is displayed with your selected choice. Then another menu comes up, “Category”. 
+          This was the most intuitive out of the three applications.</td>
+      </tr>
+    </table>
+    </section>
+
+
+    <section class="final">
+        <h2>...STATE MODELS FOR PAGES DROPDOWN MENU...</h2>
+        <h3>Current</h3>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/state1.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+      <img 
+        src="./assets/dropdownredesignImages/state2.png"
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+    </section>
+    <section class="final">
+        <h3>Revised</h3>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/state3.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+      <img 
+        src="./assets/dropdownredesignImages/state4.png"
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+    </section>
+
+    <section class="section">
+        <h2>...CHANGES...</h2>
+        <h3>
+            I am redesigning the drop down menu from Pages. </h3>
+        <div class="questions">
+            <ul>
+                <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Starting Screen', 'We were told to reconsider our starting screen. In the initial proposal, it was bombarding the user with instructions, requiring almost an onboarding to the onboarding (as referred to by our mentor) which was overly complicated. Thus, we decided to limit the number of guidelines presented to the user on the start, instead offering them an outline of all to-be-completed tasks to not overlod them with information.')">
+                    I am choosing to make selecting the menu more dramatic by having a focused state when it is hovered over. 
+        When the dropdown menu is selected, it will look pressed. When the menu is hovered on, the selected item
+         will have a red outline and a drop shadow. This increases learnability but may decrease efficiency since 
+         t might be distracting from the text on the actual document. 
+                </div>
+                <div class="cloud-textbox" style="background-color: #F5F5F5;" onclick="showPopup('Wizard', 'While the wizard was our immediate solution to the potentially confusing onboarding, we began wondering whether it would be useful at all. Having reflected on our own experiences, we started questioning - would users actually use it? Certainly, it would slow them down, which would be irritable for teams well-immersed in similar processes. Would it provide crucial information effectively, while remaining intuitive in use? Upon exploring the onboarding UIs of well-established sites - Uber, Workday, Linkedin... - we decided to keep it all conventional, recognizing that the simplest, traditional methods of presenting information are omnipresent for a reason. Upon revision, we settled on offering users easily understandable question mark icons, which, upon hovering, would expand sought-after hints.')">
+                    I added a lot of functionality with the keyboard that was not present initially. Originally, the up and 
+        down arrows didn’t control the menu, but the place of the cursor on the document. I changed it so that 
+        the arrows control how the menu is scrolled through, which is more beneficial for keyboard users. I am 
+        choosing an increase in accessibility even if it makes learnability a little less. 
+                </div>
+            </ul>
+        </div>  
+      </section>
+
+    <section class="section">
+        <h2>...CHANGES...</h2>
+        <h3>
+            I am redesigning the drop down menu from Pages. </h3>
+        <div class="questions">
+            <ul>
+                <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Starting Screen', 'We were told to reconsider our starting screen. In the initial proposal, it was bombarding the user with instructions, requiring almost an onboarding to the onboarding (as referred to by our mentor) which was overly complicated. Thus, we decided to limit the number of guidelines presented to the user on the start, instead offering them an outline of all to-be-completed tasks to not overlod them with information.')">
+                    SIn its initial state, there is a plus sign which 
+                    shows the menu can be expanded to show options. 
+                </div>
+                <div class="cloud-textbox" style="background-color: #F5F5F5;" onclick="showPopup('Wizard', 'While the wizard was our immediate solution to the potentially confusing onboarding, we began wondering whether it would be useful at all. Having reflected on our own experiences, we started questioning - would users actually use it? Certainly, it would slow them down, which would be irritable for teams well-immersed in similar processes. Would it provide crucial information effectively, while remaining intuitive in use? Upon exploring the onboarding UIs of well-established sites - Uber, Workday, Linkedin... - we decided to keep it all conventional, recognizing that the simplest, traditional methods of presenting information are omnipresent for a reason. Upon revision, we settled on offering users easily understandable question mark icons, which, upon hovering, would expand sought-after hints.')">
+                    In the state where the drop down is selected, the 
+                    drop down looks pressed and the current option is focused with a red outline and a drop shadow. 
+                    It is improved because the option that the mouse or keyboard is on looks selected. This version 
+                    of the component affects learnability because wherever your mouse is on the menu is highlighted. 
+                    This seemed like an obvious choice to make. The user just needs to remember a “+” means the menu 
+                    can extend which is common in current day apps. 
+                </div>
+                <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Carousel', 'Our initial proposal included a carousel view of the to-be-completed tasks, with each one presented as a card. To navigate between them, user would either X on that card, or use arrows, with the surrounding tasks replacing the previous in an acordeon-like motion. We have been told to reconsider whether the aforementioned method of toggling between them is intuitive and quick enough - especially for a user trying to toggle between non-consecutive tasks. While the carousel view introduced playfulness to the HCI and matched the companys visual branding, it was rather impractical. Upon reflecting on what should be prioritized when developing interfaces - in UI/UX dev, function over form! - we have decided to remove the carousel completely and display the tasks independently.')">
+                    This will be a big improvement to accessibility 
+                    for when the keyboard is used. If you are using a keyboard, you will now be able to tab to the 
+                    paragraph styles drop down, which would be more efficient.
+                </div>
+            </ul>
+        </div>  
+      </section>
+
+    <section class="final">
+        <h2>...COMPONENT REDESIGN...</h2>
+        <h3>Initial State</h3>
+        <h4>Before</h4>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/before1.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+      <img 
+        src="./assets/dropdownredesignImages/zoom1.png"
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+
+    <section class="final">
+      <h4>After</h4>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/before2.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+      <img 
+        src="./assets/dropdownredesignImages/zoom2.png"
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+
+    <section class="final">
+        <h3>Active State</h3>
+        <h4>Before</h4>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/before2.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+
+    <section class="final">
+      <h4>After</h4>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+        <img 
+        src="./assets/dropdownredesignImages/after2.png" 
+        alt="Zest company logo" 
+        style="max-height: 225px; cursor: pointer;" 
+        onclick="window.location.href='https://serve.neaq.org/application-information'" 
+      />
+    </div>
+
+
+      <section class="final">
+        <h2>...REFLECTION...</h2>
+        <p>Netflix did well by making then “Genre” category look different every state it was in. When it was 
+            hovered over, it was noticeable which makes it easier to track the cursor. I implemented this feature 
+            in my design for another application.</p>
+          <p>A text box on the Netflix website was transparent. The text stood out on the page but the text box was 
+            not filled, which makes me believe it might be hard to see in some cases. I chose a color that contrasted 
+            well with the background so it would stand out.</p>
+          <p>Most computer users in my generation are able to track their cursor and have precise control on their
+             mouse pad. Pages seems to be designed without others who cannot do this. Pages didn’t indicate if the
+              cursor was hovering over an option on the menu. I made this change so the cursor is easier to track. 
+              I also made it more visible when the drop down menu was selected.
+          </p>
+          <p>The VoiceOver function did not work with Pages well for people who needed to use the keyboard only
+             because the user couldn’t tab through the drop down menu. The drop down menu on Netflix was more 
+             accessible because you could use the arrows to scroll through the list.</p>
+          <p>I think people who could use the mouse are most prioritized. This would impact the user experience 
+            negatively if someone has limited mobility in their hands.</p>
+        </section>
+
+    <footer>
+        <p>Created by <a href="https://github.com/gaiello1">@giannaaiello</a></p>
+    </footer>
+</body>
+</html>
+

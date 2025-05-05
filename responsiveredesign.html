@@ -1,17 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Redesign Handin</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="about.css" /> 
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-  </head>
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/pog7ryn.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
+    <script>
+        function showPopup(question, answer) {
+            const popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.innerHTML = `<h4>${question}</h4><p>${answer}</p><button onclick='closePopup(this)'>Close</button>`;
+            document.body.appendChild(popup);
+        }
 
-  <body>
-
-    <div class="header">
+        function closePopup(button) {
+            document.body.removeChild(button.parentElement);
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="newheader">
         <a href="index.html">
             <img src="assets/images/gianna.png" 
             alt="Zest company logo" 
@@ -37,159 +48,167 @@
         </div>
     </div>
 
-    <!--The following block of code was found on https://css-tricks.com/snippets/svg/curved-text-along-path/-->
-    <svg viewBox="0 0 500 150">
-      <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-      <text width="500">
-        <textPath alignment-baseline="top" xlink:href="#curve">
-          Redesigning a website!
-        </textPath>
-      </text>
-    </svg>
+    <header>
+        <h1>A redesign of the New England Aquarium's UI</h1>
+    </header>
+    <div class="container">
+        <section class="final">
+            <h2>...PROJECT INTRODUCTION...</h2>
+            <h3>I wanted to redesign this website because I think the header and footer can be improved easily, and their design 
+              isn’t really seamless. I feel like this application page can be updated to match other recently, well 
+              designed applications.</h3>
+            <div><p style="margin-bottom: 0; font-style: italic;">Visit Site:</p></div>
+            <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+            <img 
+            src="./assets/ResponsiveRedesignImages/screenshot1.png" 
+            alt="Zest company logo" 
+            style="max-width: 600px; cursor: pointer;" 
+            onclick="window.location.href='https://serve.neaq.org/application-information'" 
+          />
+          <img 
+            src="./assets/ResponsiveRedesignImages/screenshot2.png" 
+            alt="Zest company logo" 
+            style="max-width: 600px; cursor: pointer;" 
+            onclick="window.location.href='https://serve.neaq.org/application-information'"/>
+        </div>
+            </div>
+        </section>
 
-    <div class="button-container">
-      <!--The following block of code was found on https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
-    <input class="styled" type="button" value="Lets learn more!" onClick="document.getElementById('text').scrollIntoView();" />
-    </div>
-    <br>
+        <section class="section">
+            <h2>...PAIN POINTS...</h2>
+            <p>
+                Zest entrusted with redesigning their onboarding process for new vendors. 
+                Here are the few key details on the ask:
+            </p>
+            <div class="notes-container">
+              <div class="post-it"><u>Accessibility:</u><br/><br/>
+                <ul>
+                <li>While using WebAIM WAIVE, a few contrast problems were detected between the text and background colors. This is for when phrases like “Select option” were
+                   written in the text box. I think it might be okay because the box is empty and it might seem intuitive to click to select the option.</li>
+                <li>Another problem was that the contrast was low where you could select what page you wanted to go to. I agree, this could be fixed. </li>
+                <li> Lastly, the website is missing a first level heading. I think this could be fixed. </li>
+               <li>It seems like the website is well done in terms of aria labels.</li>
+              </ul>
+                  </div>
+                <div class="post-it"> <u>Efficiency:</u><br/><br/>
+                  <ul>
+                    <li>I think the submit button should be centered or on the right side.</li>
+                    <li>I want to explore how it would look if all the options were aligned in columns rather than two in a row. That way the user can just scan vertically.</li>
+                  </ul>
+                </div>
+                <div class="post-it"><u>Learnability:</u><br/><br/>
+                  <ul>
+                  <li>
+                    I think the website does a good job describing what to do at each question. However, for the questions with options, I plan to make them radio buttons.</li>
+                </ul>
+              </div>
+                <div class="post-it"><u>Memorability:</u><br/><br/><ul>
+                  <li>
+                    The header and heading area doesn’t do a great job creating a memorable brand for the New England Aquarium. I plan to fix the header and footer areas to
+                     make the design more consistent. There are two of the same logos and one of them does not match the background color.  
+                  </ul>
+                </div>
+            </div>
+        </section>
 
-    
-    <div id="text">
-      <p> I will be picking one page of a website, identifying problems, and then redesigning it! </p>
-    </div>
-    <br>
+        <section class="section">
+          <h2>...INSPIRATION...</h2>
+          <div><p style="margin-bottom: 0; font-style: italic;">Visit Site:</p></div>
+          <div style="display: flex; flex-direction: row; align-items: center; gap:30px">
+          <img 
+          src="./assets/ResponsiveRedesignImages/inspiration.png" 
+          alt="Zest company logo" 
+          style="max-height: 600px; cursor: pointer;" 
+          onclick="window.location.href='https://www.justinmind.com/blog/form-examples-web-mobile/'"/>
+        </div>
+          </div>
+      </section>
 
-    <div class="image-cards">
-      <img src="./assets/ResponsiveRedesignImages/screenshot1.png" style="width:100%">
-      <img src="./assets/ResponsiveRedesignImages/Screenshot2.png" style="width:100%">
-    </div>
-    <br>
+      <section class="section">
+        <h2>...VISUAL STYLE GUIDE...</h2>
+        <h3>
+          I began by creating a visual style guide then by making some mockups for devices of different sizes. 
+        </h3>  
+        <img src="./assets/ResponsiveRedesignImages/guide.png" alt="Hi-Fi wireframes">
+    </section>
 
-    <div class="button-container">
-      <input class="styled1" type="button" value="Click here for the page I'll be redesigning" onClick="location.href='https://serve.neaq.org/application-information'" />
-    </div>
-    <br>
+    <section class="final">
+      <h2>...MOCKUPS...</h2>
+      <h3>IPhone</h3>
+      <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+      <img 
+      src="./assets/ResponsiveRedesignImages/iphone.png" 
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+    <img 
+      src="./assets/ResponsiveRedesignImages/Untitled design (1).png"
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+  </div>
+      </div>
+      <h3>Tablet</h3>
+      <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+      <img 
+      src="./assets/ResponsiveRedesignImages/tablet.png" 
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+    <img 
+      src="./assets/ResponsiveRedesignImages/Tablet1.pdf (1) (1).png" 
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+  </div>
+      </div>
+      <h3>Computer</h3>
+      <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+      <img 
+      src="./assets/ResponsiveRedesignImages/computer2.png" 
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+    <img 
+      src="./assets/ResponsiveRedesignImages/Untitled (1).png" 
+      alt="Zest company logo" 
+      style="max-width: 600px; cursor: pointer;" 
+      onclick="window.location.href='https://serve.neaq.org/application-information'" 
+    />
+  </div>
+      </div>
+  </section>
 
-    
-    <h1>Why this page?</h1>
-    <div id="text">
-      <p>I chose this website because I think the header and footer can be improved easily, and their design 
-        isn’t really seamless. I feel like this application page can be updated to match other recently, well 
-        designed applications.
-        </p>
-    </div>
-    <br>
+    <div class="final">
+        <h2>...FINAL WEBSITE...</h2>
+        <div style="display: flex; flex-direction: row; align-items: center; gap:30px">
+             <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
+             <p class="part4-label">Click here for the redesigned website!</p>
+              <video width="600" height="400;" onclick="window.location.href='https://gaiello1.github.io/Responsive-redesign/'">
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              </video>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
+              <p class="part4-label">It's responsive!</p>
+              <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
+               <video width="600" height="400;">
+                 <source src="movie.mp4" type="video/mp4">
+                 <source src="movie.ogg" type="video/ogg">
+               </video>
+             </div>
+          </div>
+        </div>
+          <div><p style="margin-bottom: 0; font-style: italic;">While doing this activity, I learned how to use the grid layout and thought it was really helpful in making the website responsive.</p></div>
+      </section>
 
-    <h1>Some problems:</h1>
-
-    <h2>Efficiency:</h2>
-    <div id="left-text">
-        <ul>
-          <li>I think the submit button should be centered or on the right side.</li>
-          <li>I want to explore how it would look if all the options were aligned in columns rather than two in a row. That way the user can just scan vertically.</li>
-        </ul>
-    </div>
-
-    <h2>Learnability:</h2>
-    <div id="left-text">
-        <ul>
-          <li>
-            I think the website does a good job describing what to do at each question. However, for the questions with options, I plan to make them radio buttons.</li>
-        </ul>
-    </div>
-
-    <h2>Memorability:</h2>
-    <div id="left-text">
-        <ul>
-          <li>
-            The header and heading area doesn’t do a great job creating a memorable brand for the New England Aquarium. I plan to fix the header and footer areas to
-             make the design more consistent. There are two of the same logos and one of them does not match the background color.  
-          </ul>
-    </div>
-
-    <h2>Accessibility Problems:</h2>
-    <div id="left-text">
-        <ul>
-          <li>While using WebAIM WAIVE, a few contrast problems were detected between the text and background colors. This is for when phrases like “Select option” were
-             written in the text box. I think it might be okay because the box is empty and it might seem intuitive to click to select the option.</li>
-          <li>Another problem was that the contrast was low where you could select what page you wanted to go to. I agree, this could be fixed. </li>
-          <li> Lastly, the website is missing a first level heading. I think this could be fixed. </li>
-         <li>It seems like the website is well done in terms of aria labels.</li>
-        </ul>
-    </div>
-  
-    <br>
-
-    <h1>Current conceptual model:</h1>
-    <div class="flex-container">
-      <div><img class="solo-image" src="./assets/ResponsiveRedesignImages/conceptualmodel.png"/></div>
-    </div>
-    
-    <br>
-
-    <h1>My inspiration:</h1>
-    <div class="flex-container1">
-      <div><img class="solo-image" src="./assets/ResponsiveRedesignImages/inspiration.png"/></div>
-      <a href="https://www.justinmind.com/blog/form-examples-web-mobile/" target="_blank">Credit belongs to this website</a> 
-    
-    </div>
-    <br>
-    <br>
-    <br>
-    <div id="text">
-      <p> I began by creating a visual style guide then by making some mockups for devices of different sizes. </p>
-    </div>
-  
-    <h1>Visual style guide:</h1>
-    <div class="flex-container">
-      <div><img class="solo-image" src="./assets/ResponsiveRedesignImages/Svisualstyleguide.png"/></div>
-    </div>
-
-    <br>
-
-    <h1>Phone mockup:</h1>
-    <div class="flex-container">
-      <div><img class="solo-image" src="./assets/ResponsiveRedesignImages/iphone.png"/></div>
-    </div>
-
-    <br>
-    <h1>Tablet mockup:</h1>
-    <div class="flex-container">
-      <div><img class="solo-image" src="./assets/ResponsiveRedesignImages/tablet.png"/></div>
-    </div>
-
-    <br>
-
-
-    <br>
-    <h1>Computer mockup:</h1>
-    <div class="flex-container">
-      <div><img class="solo-image"  src="./assets/ResponsiveRedesignImages/computer2.png"/></div>
-    </div>
-
-    <div class="row">
-        <img class="hover-image" src="./assets/ResponsiveRedesignImages/Untitled design (1).png" style="width:25%">
-        <img class="hover-image" src="./assets/ResponsiveRedesignImages/Tablet1.pdf (1) (1).png" style="width:25%">
-        <img class="hover-image" src="./assets/ResponsiveRedesignImages/Untitled (1).png" style="width:50%">
-    </div>
-
-    <br>
-    <div class="button-container">
-      <input class="styled2" type="button" value="Click here for the redesigned website!" onClick="location.href='https://gaiello1.github.io/Responsive-redesign/'" />
-    </div>
-    <br>
-    <h1>It's responsive!</h1>
-    <div class="image-cards">
-      <img src="./assets/ResponsiveRedesignImages/responsive1.png" style="width:100%">
-      <img src="./assets/ResponsiveRedesignImages/responsive2.png" style="width:100%">
-    </div>
-    <br>
-
-    <div id="text">
-      <p>While doing this activity, I learned how to use the grid layout and thought it was really helpful in making the website responsive.</p>
-    </div>
-    <br>
-    
-    <h3>Created by Gianna Aiello</h3>
-
+    <footer>
+        <p>Created by <a href="https://github.com/gaiello1">@giannaaiello</a></p>
+    </footer>
+</body>
 </html>
