@@ -1,21 +1,9 @@
-@font-face {
-    font-family: 'Manifont Grotesk';
-    src: url('assets/fonts/manifont/ManifontGroteskBook-webfont.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Abordage'; 
-    src: url('assets/fonts/abordage/Abordage-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+
   
   body {
     overflow-x: hidden;
     width: 100vw; 
-    font-family: 'Manifont Grotesk', sans-serif;
+    font-family: Optima, sans-serif;
     font-weight: 300;
     margin: 0px;
     padding: 0;
@@ -164,6 +152,7 @@
     height: auto;
     margin-top: 20px;
     text-align: left;
+    margin-left: 0;
   }
   
   .section h3{
@@ -171,6 +160,7 @@
     text-align: justify;
     text-align-last: center;
   }
+  
   /* ----------------------------- PART 1 ----------------------------- */
   
   .questions {
@@ -247,7 +237,6 @@
   }
   
   .post-it p {
-    font-family: 'Abordage', sans-serif;
     font-weight: 100;
     display: inline-block;
     vertical-align: middle;
@@ -266,6 +255,48 @@
     margin-left:10px;
   }
   
+
+  .smallpost-it {
+    cursor: pointer;
+    width: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: rotate(var(--rotation));
+    z-index: var(--index);
+    margin: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px;
+    transition: margin 0.5s ease-in-out; /* Smooth transition over 0.5s */
+  }
+
+  
+  .smallpost-it p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .smallpost-it:nth-child(1) { background-color: #fec9ca; --rotation: -3deg; --index: 1;}
+  .smallpost-it:nth-child(2) { background-color: #d3a8b4; --rotation: 2deg; --index: 2; }
+  .smallpost-it:nth-child(3) { background-color: #BD86A6; --rotation: -2deg; --index: 3; }
+  .smallpost-it:nth-child(4) { background-color: #9690ad; --rotation: 1deg; --index: 4; }
+  .smallpost-it:nth-child(5) { background-color: #f8e296; --rotation: -1deg; --index: 5; color:white}
+  
+  .smallpost-it:hover {
+    animation: shiver 1s infinite ease-in-out;
+    z-index: 1000;
+    margin-right: 10px; /* Or whatever larger margin you want */
+    margin-left:10px;
+  }
+  
+
+
+
   /* ----------------------------- PART 3 ----------------------------- */
   .popup {
     position: fixed;
@@ -285,16 +316,6 @@
     opacity: 90%;
   }
   
-  
-  .popup button {
-    font-family: 'Abordage', sans-serif;
-    background-color: #000;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-width: 0px; 
-  }
   
   /* ----------------------------- PART 4 ----------------------------- */ 
   .personas {
@@ -348,36 +369,6 @@
     75% { transform: rotate(1deg); }
   }
   
-
-
-  /**footer a {
-    background:black; 
-    color: white;
-    font-style:italic;
-    text-decoration: none;
-    padding: 3px;
-
-    display: flex;
-    flex-direction: row;
-    gap: -20px;
-    position: relative;
-    justify-content: center;
-  }
-  
-  footer a:hover {
-    background: white;
-    color: black;
-  }
-  .part4-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: nowrap; 
-  }
-  **/
-
   .part4-block {
     display: flex;
     flex-direction: column;
@@ -451,6 +442,11 @@
       border-radius: 0px;
       transform:scale(1.1);
     }
+
+    .header img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
   
     
     /* Float the link section to the right */
@@ -470,18 +466,19 @@
       }
     }
 
+
   .footer {
     width: 100%;
     overflow: hidden;
     padding: 20px 10px;
     border-top: #1c1c1c 3px dotted;
     font-style: italic;
-
     text-align: center;
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 50px; 
   }
   
   /* Style the header links */
@@ -489,14 +486,13 @@
     float: left;
     color: black;
     text-align: center;
-    padding: 12px;
+    padding: 5px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
   }
   
   .footer a:hover {
-    background-color: black;
     color: white;
     border-radius: 0px;
   }

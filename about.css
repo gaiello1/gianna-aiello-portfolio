@@ -4,7 +4,7 @@
   
   body {
     margin: 0;
-    font-family: Arial;
+    font-family: Optima, sans-serif;
   }
   
   
@@ -100,11 +100,6 @@
     text-align: center;
   }
 
-
-  body {
-    font-family: "Lato", sans-serif;
-  }
-
   
   .column a {
     padding: 6px 8px 6px 16px;
@@ -153,6 +148,11 @@
     background-color: white;
     z-index: 1000;  /* higher than sidenav's 1 */
 
+  }
+
+  .header img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
   }
   
   /* Style the header links */
