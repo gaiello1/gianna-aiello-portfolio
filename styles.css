@@ -12,6 +12,34 @@
   font-style: normal;
 }
 
+
+.img-acu1
+{
+  float: left;
+  width: 450px;
+  height: 450px;
+  background:transparent url("screen.png") center top no-repeat;
+  background-size: 125%;
+}
+.img-acu1:hover
+{
+  background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXd5ZXB2NGl5ODFidnJzYXA5MTV5YmM2bjZjNHRjbTRicHE3YmpreSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MMiMRWlxVKlxHq0xrx/giphy.gif");
+  
+}
+
+.img-acu2
+{
+  float: left;
+  width: 450px;
+  height: 450px;
+  background:transparent url("screen1.png") center top no-repeat;
+  background-size: 125%;
+}
+.img-acu2:hover
+{
+  background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmIwMDNvMTlrdXozaDJ5MzV0dmxkeXJ2YWJkYm5hdXM5M2V5ZHVmcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EUcGF4EnVgFluan0Cc/giphy.gif");
+  
+}
 body {
   width: 100vw; 
   font-family: 'Manifont Grotesk', sans-serif;
