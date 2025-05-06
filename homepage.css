@@ -218,7 +218,7 @@
   
   .post-it {
     cursor: pointer;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -241,12 +241,6 @@
     display: inline-block;
     vertical-align: middle;
   }
-  
-  .post-it:nth-child(1) { background-color: #fec9ca; --rotation: -3deg; --index: 1;}
-  .post-it:nth-child(2) { background-color: #d3a8b4; --rotation: 2deg; --index: 2; }
-  .post-it:nth-child(3) { background-color: #BD86A6; --rotation: -2deg; --index: 3; }
-  .post-it:nth-child(4) { background-color: #9690ad; --rotation: 1deg; --index: 4; }
-  .post-it:nth-child(5) { background-color: #f8e296; --rotation: -1deg; --index: 5; color:white}
   
   .post-it:hover {
     animation: shiver 1s infinite ease-in-out;
@@ -282,10 +276,7 @@
   }
   
   .smallpost-it:nth-child(1) { background-color: #fec9ca; --rotation: -3deg; --index: 1;}
-  .smallpost-it:nth-child(2) { background-color: #d3a8b4; --rotation: 2deg; --index: 2; }
-  .smallpost-it:nth-child(3) { background-color: #BD86A6; --rotation: -2deg; --index: 3; }
-  .smallpost-it:nth-child(4) { background-color: #9690ad; --rotation: 1deg; --index: 4; }
-  .smallpost-it:nth-child(5) { background-color: #f8e296; --rotation: -1deg; --index: 5; color:white}
+  .smallpost-it:nth-child(2) { background-color: #9690ad; --rotation: 2deg; --index: 2; }
   
   .smallpost-it:hover {
     animation: shiver 1s infinite ease-in-out;

@@ -6,11 +6,6 @@
     <title>Gianna Aiello's Portfolio</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
-    <script>
-        function closePopup(button) {
-            document.body.removeChild(button.parentElement);
-        }
-    </script>
     </head>
 
 <body>
@@ -51,36 +46,41 @@
         alt="Work image" 
         class="work-left"
         style="max-width: 250px;" />
+
         <div class="notes-container">
-            <div class="post-it" onclick="window.location.href='https://gaiello1.github.io/redesign-dropdown/'" >
+
+           <a href="dropdownredesign.html" title="Case Study 1">
+            <div class="post-it" style="background-color: #fec9ca; --rotation: -3deg; --index: 1;">
                 <u>Accessible Components</u><br/><br/>
                 Redesigned a dropdown menu to be more accessible
-                <!--  found this on https://stackoverflow.com/questions/27752500/how-to-have-an-anim-gif-on-a-link-and-play-it-on-hover-and-reset-->
-               <a href="https://www.google.com" title="Case Study 1">
-                      <div class="img-acu"></div>
-                </a>
-             </div>
-            <div class="post-it" onclick="window.location.href='https://jzdzilowska.github.io/IterativeDesign/'" >
+                <div class="img-acu"></div>
+           </div>
+            </a>
+
+           <a href="iterativedesign.html" title="Case Study 1">
+            <div class="post-it" style="background-color: #d3a8b4; --rotation: 2deg; --index: 2;">
                 <u>Zest Redesign</u><br/><br/>
                 Redesigned an onboarding experience
-                <a href="https://www.google.com" title="Case Study 1">
-                    <div class="img-acu"></div>
-              </a>
+                <div class="img-acu"></div>
            </div>
-            <div class="post-it">
+            </a>
+
+           <a href="responsiveredesign.html" title="Case Study 1">
+            <div class="post-it" style=" background-color: #BD86A6; --rotation: -2deg; --index: 3; ">
                 <u>New England Aquarium Redesign</u><br/><br/>
                 Redesigned a website to address usability problems
-                <a href="responsiveredesign.html" title="Case Study 1">
-                    <div class="img-acu"></div>
-              </a>
+                <div class="img-acu"></div>
            </div>
-            <div class="post-it" onclick="window.location.href='https://gaiello1.github.io/persona-storyboarding/'" >
+            </a>
+
+           <a href="https://www.google.com" title="Case Study 1">
+            <div class="post-it" style="background-color: #9690ad; --rotation: 1deg; --index: 4; ">
                 <u>Persona and Storyboarding</u><br/><br/>
                 Redesigned a physical interface based on feedback
-                <a href="https://www.google.com" title="Case Study 1">
-                    <div class="img-acu"></div>
-              </a>
+                <div class="img-acu"></div>
            </div>
+            </a>
+
         </div>
     </section>
 </div>
@@ -89,7 +89,7 @@
 <div class="footer">
     <h3>Let's get in touch! </h3>
     
-        <div class="smallpost-it">
+        <div class="smallpost-it" style="background-color: #fec9ca";>
             <a href="https://www.linkedin.com/in/gianna-aiello-874a5a229/" class="logo">
                 <img src="assets/images/linkedin.webp" 
                     alt="linkedin" 
@@ -97,7 +97,7 @@
                     /></a>
        </div>
 
-        <div class="smallpost-it">
+        <div class="smallpost-it" style="background-color: #9690ad;">
             <a href="mailto:gianna_aiello@brown.edu" class="logo">
                 <img src="assets/images/email.webp" 
                     alt="email" 
