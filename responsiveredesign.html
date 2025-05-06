@@ -7,18 +7,6 @@
     <title>Iterative Design</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
-    <script>
-        function showPopup(question, answer) {
-            const popup = document.createElement('div');
-            popup.className = 'popup';
-            popup.innerHTML = `<h4>${question}</h4><p>${answer}</p><button onclick='closePopup(this)'>Close</button>`;
-            document.body.appendChild(popup);
-        }
-
-        function closePopup(button) {
-            document.body.removeChild(button.parentElement);
-        }
-    </script>
 </head>
 <body>
     
@@ -60,13 +48,13 @@
             <div><p style="margin-bottom: 0; font-style: italic;">Visit Site:</p></div>
             <div style="display: flex; flex-direction: row; align-items: center; gap:15px">
             <img 
-            src="./assets/ResponsiveRedesignImages/screenshot1.png" 
+            src="./assets/ResponsiveRedesignImages/Screenshot1.png" 
             alt="Zest company logo" 
             style="max-width: 600px; cursor: pointer;" 
             onclick="window.location.href='https://serve.neaq.org/application-information'" 
           />
           <img 
-            src="./assets/ResponsiveRedesignImages/screenshot2.png" 
+            src="./assets/ResponsiveRedesignImages/Screenshot2.png" 
             alt="Zest company logo" 
             style="max-width: 600px; cursor: pointer;" 
             onclick="window.location.href='https://serve.neaq.org/application-information'"/>
