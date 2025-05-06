@@ -32,6 +32,13 @@
     margin: 40px;
   }
 
+  .intro:hover {
+    animation: shiver 1s infinite ease-in-out;
+    z-index: 1000;
+    margin-right: 10px; /* Or whatever larger margin you want */
+    margin-left:10px;
+  }
+
   .intro img{
     padding: 20px 0 0 40px;
   }
@@ -44,8 +51,9 @@
   }
   
   .intro h3{
-    font-size: 25px;
-    margin:50px;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    margin:30px;
     text-align-last: left;
   }
 
@@ -157,7 +165,6 @@
 
   a{
     text-decoration: none;
-    text-decoration: underline;
     color: inherit; 
     margin-block: 0;
     font-style: italic;
@@ -251,6 +258,7 @@
   /* ----------------------------- PART 2 ----------------------------- */
   
   .notes-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     gap: -20px;
     position: relative;
@@ -273,7 +281,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
+    height: 300px;
     transition: margin 0.5s ease-in-out; /* Smooth transition over 0.5s */
   }
   
