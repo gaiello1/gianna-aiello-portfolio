@@ -151,9 +151,19 @@
   float: left;
   width: 350px;
   height: 350px;
-  background:transparent url("4.png") center top no-repeat;
+  background:transparent url("ss5.png") center top no-repeat;
   background-size: 125%;
 }
+
+.img-acu5
+{
+  float: left;
+  width: 350px;
+  height: 200px;
+  background:transparent url("soilsensepic.png") center top no-repeat;
+  background-size: 50%;
+}
+
 .img-acu1:hover
 {
   background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTV2NHA3cHdmN2ZtcDcxeHRkNjI1N2hpN2M5b2I1bHZ2MWp2aXQ1cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ifdbNglxKsHQuRURND/giphy.gif");
@@ -172,7 +182,7 @@
 }
 .img-acu4:hover
 {
-  background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2NqM2F0OWl1ZnhmbWxkNnZ0d3F5enk2bzIwaG1yNHNobTVpMjg2YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mGWCQYArUmI795kErL/giphy.gif");
+  background-image: url("gif.gif");
   
 }
 
